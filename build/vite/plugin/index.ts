@@ -24,9 +24,8 @@ import { configQiankunMicroPlugin } from './qiankunMicro';
  *
  * @param viteEnv
  * @param isBuild
- * @param isQiankunMicro 是否【JEECG作为乾坤子应用】
  */
-export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean, isQiankunMicro: boolean) {
+export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   const { VITE_USE_MOCK, VITE_BUILD_COMPRESS, VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE } = viteEnv;
 
   const vitePlugins: (PluginOption | PluginOption[])[] = [
@@ -45,7 +44,7 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean, isQiankunM
   vitePlugins.push(UnoCSS({ presets: [presetUno(), presetTypography()] }));
 
   // vite-plugin-html
-  vitePlugins.push(configHtmlPlugin(viteEnv, isBuild, isQiankunMicro));
+  vitePlugins.push(configHtmlPlugin(viteEnv, isBuild));
 
   // vite-plugin-svg-icons
   vitePlugins.push(configSvgIconsPlugin(isBuild));
@@ -62,11 +61,11 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean, isQiankunM
   // vite-plugin-theme
   vitePlugins.push(configThemePlugin(isBuild));
 
-  // 【JEECG作为乾坤子应用】注册乾坤子应用模式插件
-  if (isQiankunMicro) {
-    // vite-plugin-qiankun
-    vitePlugins.push(...configQiankunMicroPlugin(viteEnv))
-  }
+  // // 【JEECG作为乾坤子应用】注册乾坤子应用模式插件
+  // if (isQiankunMicro) {
+  //   // vite-plugin-qiankun
+  //   vitePlugins.push(...configQiankunMicroPlugin(viteEnv))
+  // }
 
   // The following plugins only work in the production environment
   if (isBuild) {

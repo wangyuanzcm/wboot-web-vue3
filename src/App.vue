@@ -39,7 +39,7 @@
       }
     }
   };
-  // update-begin--author:liaozhiyang---date:20231218---for：【QQYUN-6366】升级到antd4.x
+  // update-begin--author:liaozhiyang---d   ate:20231218---for：【QQYUN-6366】升级到antd4.x
   const appTheme: any = ref({});
   const { getDarkMode } = useRootSetting();
   watch(
