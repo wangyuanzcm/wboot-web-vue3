@@ -17,8 +17,8 @@ import { setupI18n } from '/@/locales/setupI18n';
 import { registerGlobComp } from '/@/components/registerGlobComp';
 import { registerThirdComp } from '/@/settings/registerThirdComp';
 import { useSso } from '/@/hooks/web/useSso';
-import { checkIsQiankunMicro } from "/@/qiankun/micro";
-import { autoUseQiankunMicro } from "/@/qiankun/micro/qiankunMicro";
+// import { checkIsQiankunMicro } from "/@/qiankun/micro";
+// import { autoUseQiankunMicro } from "/@/qiankun/micro/qiankunMicro";
 import { useAppStoreWithOut } from "@/store/modules/app";
 
 // 注册online模块lib
@@ -26,16 +26,16 @@ import { registerPackages } from '/@/utils/monorepo/registerPackages';
 
 // 程序入口
 async function main() {
-  if (checkIsQiankunMicro()) {
-    // 【JEECG作为乾坤子应用】以乾坤子应用模式启动
-    // await autoUseQiankunMicro(bootstrap)
-    await autoUseQiankunMicro(bootstrap)
-  } else {
+  // if (checkIsQiankunMicro()) {
+  //   // 【JEECG作为乾坤子应用】以乾坤子应用模式启动
+  //   // await autoUseQiankunMicro(bootstrap)
+  //   await autoUseQiankunMicro(bootstrap)
+  // } else {
     // 获取参数
     const props = getMainAppProps();
     // 普通启动
     await bootstrap(props)
-  }
+  // }
 }
 
 main();
