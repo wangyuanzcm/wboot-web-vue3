@@ -1,6 +1,6 @@
 import type { MainAppProps } from "#/main";
 import 'uno.css';
-import '/~/design/index.less';
+import '/@/design/index.less';
 import 'ant-design-vue/dist/reset.css';
 // 注册图标
 import 'virtual:svg-icons-register';

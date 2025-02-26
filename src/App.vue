@@ -12,7 +12,7 @@
   import { ConfigProvider } from 'ant-design-vue';
   import { AppProvider } from '/@/components/Application';
   import { useTitle } from '/@/hooks/web/useTitle';
-  import { useLocale } from '/@/locales/useLocale';
+  import { useLocale } from '/~/locales/useLocale';
   import { useAppStore } from '/@/store/modules/app';
   import { useRootSetting } from '/@/hooks/setting/useRootSetting';
   import { ThemeEnum } from '/@/enums/appEnum';

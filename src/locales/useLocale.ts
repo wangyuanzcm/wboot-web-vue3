@@ -6,7 +6,7 @@ import type { LocaleType } from '/#/config';
 import { i18n ,getDefaultLocalMessage} from '/@/locales/setupI18n';
 import { useLocaleStoreWithOut } from '/@/store/modules/locale';
 import { unref, computed } from 'vue';
-import { loadLocalePool, setHtmlPageLang } from '/@/helper';
+import { loadLocalePool, setHtmlPageLang } from '/@/locales/helper';
 
 interface LangModule {
   message: Recordable;
