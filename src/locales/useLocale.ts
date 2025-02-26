@@ -3,10 +3,10 @@
  */
 import type { LocaleType } from '/#/config';
 
-import { i18n } from './setupI18n';
+import { i18n ,getDefaultLocalMessage} from '/@/locales/setupI18n';
 import { useLocaleStoreWithOut } from '/@/store/modules/locale';
 import { unref, computed } from 'vue';
-import { loadLocalePool, setHtmlPageLang } from './helper';
+import { loadLocalePool, setHtmlPageLang } from '/@/helper';
 
 interface LangModule {
   message: Recordable;
@@ -48,12 +48,14 @@ export function useLocale() {
       setI18nLanguage(locale);
       return locale;
     }
+
+    const defaultMessage = await getDefaultLocalMessage(locale);
+
     const langModule = ((await import(`./lang/${locale}.ts`)) as any).default as LangModule;
     if (!langModule) return;
-
     const { message } = langModule;
 
-    globalI18n.setLocaleMessage(locale, message);
+    globalI18n.setLocaleMessage(locale, {message: {...defaultMessage, ...message}});
     loadLocalePool.push(locale);
 
     setI18nLanguage(locale);

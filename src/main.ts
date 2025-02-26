@@ -1,6 +1,6 @@
 import type { MainAppProps } from "#/main";
 import 'uno.css';
-import '/@/design/index.less';
+import '/~/design/index.less';
 import 'ant-design-vue/dist/reset.css';
 // 注册图标
 import 'virtual:svg-icons-register';
@@ -13,7 +13,7 @@ import { router, createRouter, setupRouter } from '/@/router';
 import { setupRouterGuard } from '/@/router/guard';
 import { setupStore } from '/@/store';
 import { setupGlobDirectives } from '/@/directives';
-import { setupI18n } from '/@/locales/setupI18n';
+import { setupI18n } from '/~/locales/setupI18n'; // 使用本地多语言配置
 import { registerGlobComp } from '/@/components/registerGlobComp';
 import { registerThirdComp } from '/@/settings/registerThirdComp';
 import { useSso } from '/@/hooks/web/useSso';
