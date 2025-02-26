@@ -1,6 +1,6 @@
 import type { MainAppProps } from "#/main";
 import 'uno.css';
-import '/@/design/index.less';
+import '/~/design/index.less';
 import 'ant-design-vue/dist/reset.css';
 // 注册图标
 import 'virtual:svg-icons-register';
@@ -9,7 +9,7 @@ import App from './App.vue';
 import { createApp } from 'vue';
 import { initAppConfigStore } from '/@/logics/initAppConfig';
 import { setupErrorHandle } from '/@/logics/error-handle';
-import { router, createRouter, setupRouter } from '/@/router';
+import { router, createRouter, setupRouter } from '/~/router';
 import { setupRouterGuard } from '/@/router/guard';
 import { setupStore } from '/@/store';
 import { setupGlobDirectives } from '/@/directives';
