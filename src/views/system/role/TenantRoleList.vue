@@ -41,7 +41,7 @@
   import { listByTenant, deleteRole, batchDeleteRole, getExportUrl, getImportUrl } from './role.api';
   import { useListPage } from '/@/hooks/system/useListPage';
   import { getLoginTenantName } from "/@/views/system/tenant/tenant.api";
-  import { tenantSaasMessage } from "@/utils/common/compUtils";
+  import { tenantSaasMessage } from "/@/utils/common/compUtils";
   
   const showFooter = ref(true);
   const [roleUserDrawer, { openDrawer: openRoleUserDrawer }] = useDrawer();

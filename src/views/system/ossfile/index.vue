@@ -35,7 +35,7 @@
   import { list, deleteFile, getOssUrl, getMinioUrl } from './ossfile.api';
   import { useGlobSetting } from '/@/hooks/setting';
   import { getToken } from '/@/utils/auth';
-  import {encryptByBase64} from "@/utils/cipher";
+  import {encryptByBase64} from "/@/utils/cipher";
 
   const { createMessage } = useMessage();
   const glob = useGlobSetting();

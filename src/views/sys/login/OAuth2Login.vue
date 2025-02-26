@@ -12,8 +12,8 @@
   import { useMessage } from '/@/hooks/web/useMessage';
   import { useI18n } from '/@/hooks/web/useI18n';
   import { getAuthCache, getTenantId, getToken } from "/@/utils/auth";
-  import { OAUTH2_THIRD_LOGIN_TENANT_ID } from "@/enums/cacheEnum";
-  import { defHttp } from "@/utils/http/axios";
+  import { OAUTH2_THIRD_LOGIN_TENANT_ID } from "/@/enums/cacheEnum";
+  import { defHttp } from "/@/utils/http/axios";
   import { requestAuthCode } from "dingtalk-jsapi";
 
   const isOAuth = ref<boolean>(isOAuth2AppEnv());

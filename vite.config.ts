@@ -60,11 +60,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           find: /\/@\//,
           replacement: pathResolve('packages/libs') + '/',
         },
-        // /@/xxxx => src/xxxx
-        {
-          find: /\/@\//,
-          replacement: pathResolve('packages/libs') + '/',
-        },
         // /#/xxxx => types/xxxx
         {
           find: /\/#\//,
@@ -79,6 +74,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           find: /#\//,
           replacement: pathResolve('types') + '/',
         },
+        {
+          find: /\/~\//,
+          replacement: pathResolve('src') + '/',
+        }
       ],
     },
     server: {

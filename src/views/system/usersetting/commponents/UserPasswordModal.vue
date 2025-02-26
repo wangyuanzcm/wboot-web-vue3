@@ -27,10 +27,10 @@
   import { updateUserPassword } from '../UserSetting.api';
   import { useMessage } from "/@/hooks/web/useMessage";
   import { useUserStore, useUserStoreWithOut } from "/@/store/modules/user";
-  import { getCaptcha } from "@/api/sys/user";
-  import { SmsEnum } from "@/views/sys/login/useLogin";
+  import { getCaptcha } from "/@/api/sys/user";
+  import { SmsEnum } from "/@/views/sys/login/useLogin";
   import { CountdownInput } from '/@/components/CountDown';
-  import { defHttp } from "@/utils/http/axios";
+  import { defHttp } from "/@/utils/http/axios";
 
   const { createMessage, createErrorModal } = useMessage();
   //用户名

@@ -11,7 +11,7 @@
   import { demoListApi } from '/@/api/demo/table';
   import { treeOptionsListApi } from '/@/api/demo/tree';
   import { useMessage } from '/@/hooks/web/useMessage';
-  import { mapTableTotalSummary } from "@/utils/common/compUtils";
+  import { mapTableTotalSummary } from "/@/utils/common/compUtils";
   const columns: BasicColumn[] = [
     {
       title: '输入框',

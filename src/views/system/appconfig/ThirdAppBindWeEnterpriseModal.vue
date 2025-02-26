@@ -53,9 +53,9 @@
   import { BasicModal, useModalInner } from '/@/components/Modal';
   import { getThirdUserByWechat, wechatEnterpriseToLocal, getThirdUserBindByWechat, deleteThirdAccount } from './ThirdApp.api';
   import { getFileAccessHttpUrl } from '/@/utils/common/compUtils';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { useMessage } from '/@/hooks/web/useMessage';
   import { Modal } from 'ant-design-vue';
-  import { useUserStore } from '@/store/modules/user';
+  import { useUserStore } from '/@/store/modules/user';
 
   export default defineComponent({
     name: 'ThirdAppBindWeEnterpriseModal',

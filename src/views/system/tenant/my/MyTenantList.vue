@@ -43,7 +43,7 @@
   import TenantPackList from '../pack/TenantPackList.vue';
   import { getTenantId } from '/@/utils/auth';
   import { useUserStore } from '/@/store/modules/user';
-  import { tenantSaasMessage } from "@/utils/common/compUtils";
+  import { tenantSaasMessage } from "/@/utils/common/compUtils";
 
   const { createMessage } = useMessage();
   const [registerModal, { openModal }] = useModal();

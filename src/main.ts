@@ -19,7 +19,7 @@ import { registerThirdComp } from '/@/settings/registerThirdComp';
 import { useSso } from '/@/hooks/web/useSso';
 // import { checkIsQiankunMicro } from "/@/qiankun/micro";
 // import { autoUseQiankunMicro } from "/@/qiankun/micro/qiankunMicro";
-import { useAppStoreWithOut } from "@/store/modules/app";
+import { useAppStoreWithOut } from "/@/store/modules/app";
 
 // 注册online模块lib
 import { registerPackages } from '/@/utils/monorepo/registerPackages';

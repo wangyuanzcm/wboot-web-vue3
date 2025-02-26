@@ -48,7 +48,7 @@
   import { changeOwenUserTenant } from "/@/views/system/usersetting/UserSetting.api";
   import { getLoginTenantName } from "/@/views/system/tenant/tenant.api";
   import TenantUserDrawer from './components/TenantUserDrawer.vue';
-  import { tenantSaasMessage } from "@/utils/common/compUtils";
+  import { tenantSaasMessage } from "/@/utils/common/compUtils";
 
   const { createMessage, createConfirm } = useMessage();
 

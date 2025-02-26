@@ -95,9 +95,9 @@
   import eyeKImg from '/@/assets/loginmini/icon/icon-eye-k.png';
   import eyeGImg from '/@/assets/loginmini/icon/icon-eye-g.png';
   import { useI18n } from "/@/hooks/web/useI18n";
-  import CaptchaModal from '@/components/jeecg/captcha/CaptchaModal.vue';
-  import { useModal } from "@/components/Modal";
-  import { ExceptionEnum } from "@/enums/exceptionEnum";
+  import CaptchaModal from '/@/components/jeecg/captcha/CaptchaModal.vue';
+  import { useModal } from "/@/components/Modal";
+  import { ExceptionEnum } from "/@/enums/exceptionEnum";
 
   const { t } = useI18n();
   const { notification, createErrorModal, createMessage } = useMessage();

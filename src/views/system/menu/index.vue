@@ -38,7 +38,7 @@
   import DataRuleList from './DataRuleList.vue';
   import { columns,searchFormSchema } from './menu.data';
   import { list, deleteMenu, batchDeleteMenu } from './menu.api';
-  import { useDefIndexStore } from "@/store/modules/defIndex";
+  import { useDefIndexStore } from "/@/store/modules/defIndex";
   import { useI18n } from "/@/hooks/web/useI18n";
 
   const checkedKeys = ref<Array<string | number>>([]);

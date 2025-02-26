@@ -10,7 +10,7 @@
   import { BasicForm, useForm } from '/@/components/Form/index';
   import { formSchema } from './fill.rule.data';
   import { saveFillRule, updateFillRule } from './fill.rule.api';
-  import {useMessage} from "@/hooks/web/useMessage";
+  import {useMessage} from "/@/hooks/web/useMessage";
 
   const { createMessage: $message } = useMessage();
 

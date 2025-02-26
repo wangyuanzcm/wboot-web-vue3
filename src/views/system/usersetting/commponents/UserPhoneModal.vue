@@ -70,8 +70,8 @@ import { rules } from "/@/utils/helper/validator";
 import { Form } from "ant-design-vue";
 import { updateMobile, changePhone } from "../UserSetting.api";
 import { duplicateCheck } from "/@/views/system/user/user.api";
-import {defHttp} from "@/utils/http/axios";
-import { ExceptionEnum } from "@/enums/exceptionEnum";
+import {defHttp} from "/@/utils/http/axios";
+import { ExceptionEnum } from "/@/enums/exceptionEnum";
 
 const userStore = useUserStore();
 const { createMessage } = useMessage();

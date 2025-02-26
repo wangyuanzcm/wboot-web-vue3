@@ -65,7 +65,7 @@
   import ThirdAppConfigModal from './ThirdAppConfigModal.vue';
   import { useModal } from '/@/components/Modal';
   import { useMessage } from '/@/hooks/web/useMessage';
-  import { getTenantId } from '@/utils/auth';
+  import { getTenantId } from '/@/utils/auth';
   import ThirdAppBindWeEnterpriseModal from './ThirdAppBindWeEnterpriseModal.vue';
   import { Modal } from "ant-design-vue";
 

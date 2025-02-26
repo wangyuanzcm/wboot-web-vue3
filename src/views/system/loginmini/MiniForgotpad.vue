@@ -101,9 +101,9 @@
   import logoImg from '/@/assets/loginmini/icon/jeecg_logo.png'
   import adTextImg from '/@/assets/loginmini/icon/jeecg_ad_text.png'
   import successImg from '/@/assets/loginmini/icon/icon-success.png'
-  import CaptchaModal from '@/components/jeecg/captcha/CaptchaModal.vue';
-  import { useModal } from "@/components/Modal";
-  import { ExceptionEnum } from "@/enums/exceptionEnum";
+  import CaptchaModal from '/@/components/jeecg/captcha/CaptchaModal.vue';
+  import { useModal } from "/@/components/Modal";
+  import { ExceptionEnum } from "/@/enums/exceptionEnum";
   const [captchaRegisterModal, { openModal: openCaptchaModal }] = useModal();
 
   //下一步控制
