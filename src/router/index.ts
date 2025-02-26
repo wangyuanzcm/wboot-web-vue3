@@ -4,6 +4,7 @@ import type { App } from 'vue';
 import { basicRoutes } from './routes';
 import {createRouter as createVueRouter, destroyRouter, router} from '/@/router/router'
 
+console.log(basicRoutes,'router---')
 // 白名单应该包含基本静态路由
 const WHITE_NAME_LIST: string[] = [];
 const getRouteNames = (array: any[]) =>

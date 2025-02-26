@@ -6,12 +6,12 @@ import { usePermissionStore } from '/@/store/modules/permission';
 import { transformMenuModule, getAllParentPath } from '/@/router/helper/menuHelper';
 import { filter } from '/@/utils/helper/treeHelper';
 import { isUrl } from '/@/utils/is';
-import { router } from '/@/router';
+import { router } from '/~/router';
 import { PermissionModeEnum } from '/@/enums/appEnum';
 import { pathToRegexp } from 'path-to-regexp';
 
 const modules = import.meta.glob('./modules/**/*.ts', { eager: true });
-
+console.log(modules,'modules---');
 const menuModules: MenuModule[] = [];
 
 Object.keys(modules).forEach((key) => {
