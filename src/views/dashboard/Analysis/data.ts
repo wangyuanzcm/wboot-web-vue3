@@ -45,7 +45,7 @@ export const growCardList: GrowCardItem[] = [
 
 export const chartCardList: GrowCardItem[] = [
   {
-    title: '总销售额',
+    title: '总销售额=====',
     icon: 'visit-count|svg',
     total: 126560,
     value: 234.56,

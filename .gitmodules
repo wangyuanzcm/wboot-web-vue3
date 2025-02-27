@@ -1,3 +1,4 @@
 [submodule "packages"]
 	path = packages
 	url = https://github.com/wangyuanzcm/wboot-packages.git
+	branch = main 

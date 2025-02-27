@@ -53,6 +53,7 @@ const staticMenus: Menu[] = [];
 
 async function getAsyncMenus() {
   const permissionStore = usePermissionStore();
+  console.log(permissionStore,'permissionStore');
   if (isBackMode()) {
     return permissionStore.getBackMenuList.filter((item) => !item.meta?.hideMenu && !item.hideMenu);
   }

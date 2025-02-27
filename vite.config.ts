@@ -3,11 +3,11 @@ import pkg from './package.json';
 import dayjs from 'dayjs';
 import { loadEnv } from 'vite';
 import { resolve } from 'path';
-import { generateModifyVars } from './build/generate/generateModifyVars';
-import { createProxy } from './build/vite/proxy';
-import { wrapperEnv } from './build/utils';
-import { createVitePlugins } from './build/vite/plugin';
-import { OUTPUT_DIR } from './build/constant';
+import { generateModifyVars } from './packages/build/generate/generateModifyVars';
+import { createProxy } from './packages/build/vite/proxy';
+import { wrapperEnv } from './packages/build/utils';
+import { createVitePlugins } from './packages/build/vite/plugin';
+import { OUTPUT_DIR } from './packages/build/constant';
 
 function pathResolve(dir: string) {
   return resolve(process.cwd(), '.', dir);
